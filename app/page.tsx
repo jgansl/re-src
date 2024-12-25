@@ -2,6 +2,9 @@ import { Metadata } from "next"
 import { Button } from "components/Button/Button"
 import { LP_GRID_ITEMS } from "lp-items"
 
+import Hero from "@/block-patterns/hero/Hero"
+import Footer from "@/block-patterns/footer/Footer"
+
 export const metadata: Metadata = {
   title: "Next.js Enterprise Boilerplate",
   twitter: {
@@ -45,6 +48,7 @@ export default function Web() {
           </div>
         </div>
       </section>
+      <Hero />
       <section className="bg-white dark:bg-gray-900">
         <div className="mx-auto max-w-screen-xl px-4 py-8 sm:py-16 lg:px-6">
           <div className="justify-center space-y-8 md:grid md:grid-cols-2 md:gap-12 md:space-y-0 lg:grid-cols-3">
